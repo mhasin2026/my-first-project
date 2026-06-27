@@ -1,4 +1,4 @@
-﻿@model photographyStudio.Models.Booking
+﻿@model photographyStudio.Models.AdminUser
 
 @{
     ViewBag.Title = "Details";
@@ -7,76 +7,28 @@
 <h2>Details</h2>
 
 <div>
-    <h4>Booking</h4>
+    <h4>AdminUser</h4>
     <hr />
     <dl class="dl-horizontal">
         <dt>
-            @Html.DisplayNameFor(model => model.CustomerName)
+            @Html.DisplayNameFor(model => model.Username)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.CustomerName)
+            @Html.DisplayFor(model => model.Username)
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.CustomerPhone)
+            @Html.DisplayNameFor(model => model.Password)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.CustomerPhone)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.CustomerEmail)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.CustomerEmail)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.BookingDate)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.BookingDate)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.BookingTime)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.BookingTime)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Notes)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Notes)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Status)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Status)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Service.ServiceName)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Service.ServiceName)
+            @Html.DisplayFor(model => model.Password)
         </dd>
 
     </dl>
 </div>
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.BookingID }) |
+    @Html.ActionLink("Edit", "Edit", new { id = Model.AdminID }) |
     @Html.ActionLink("Back to List", "Index")
 </p>
